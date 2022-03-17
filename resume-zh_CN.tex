@@ -7,6 +7,7 @@
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+\usepackage{hyperref}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -22,11 +23,11 @@
  
 \section{个人总结}
 长期前后端开发经验，熟练掌握多种编程语言，全栈工程师。熟悉常用软件开发工具，擅长学习GitHub上流行的开源软件技术并应用到工作中，时刻保持对提高软件开发质量，提高流程可重复性的积极性。
-有生物信息流程开发经验，同时也具备深度学习算法开发及部署经验，掌握多种web本地开发及云开发技术栈，DevOp能力出色，两年管理经验。
+有生物信息流程开发经验，同时也具备图像识别深度学习算法开发及部署经验，掌握多种web本地开发及云开发技术栈，DevOp能力出色，两年管理经验。
 
 % \section{\faGraduationCap\ 教育背景}
 \section{教育背景}
-\datedsubsection{\textbf{中国科学院大学},生物物理,\textit{博士}}{2006.9 - 2014.6}
+\datedsubsection{\textbf{中国科学院大学/中科院合肥物质科学研究院},生物物理,\textit{博士}}{2006.9 - 2014.6}
 \datedsubsection{\textbf{中国农业大学},生命科学,\textit{理学学士}}{2002.9 - 2006.6}
 
 % \section{\faCogs\ IT 技能}
@@ -36,10 +37,12 @@
   \item \textbf{编程语言}: 熟练应用Python（8年）、R、Javascript（Typescript、Node.js）、Go、Groovy等编程语言，了解Java、Scala、Clojure等语言。使用过\LaTeX{}。
   \item \textbf{操作系统}: Linux/ESXi
   \item \textbf{数据库}: MySQL/MongoDB/AWS DynamoDB
-  \item \textbf{后端框架}: SQLAlachemy/Flask/PyTest/Express/AWS Amplify
+  \item \textbf{后端框架}: SQLAlachemy/Flask/PyTest/Echo/Express/AWS Amplify
   \item \textbf{前端框架}: OpenSeadragon/OpenLayers/Fabric.js/React/Vue2
   \item \textbf{DevOp}: Ansible/Vagrant/Docker Compose/Jsonnet/Nextflow/Jenkins/AWS CDK
-  \item \textbf{其他关键词}: IoT/Jetson/Matplotlib/GGplot2/Reproduciblity/Rmd
+  \item \textbf{图像处理}: OpenCV/OpenSlide/QuPATH
+  \item \textbf{人工智能}: PyTorch
+  \item \textbf{其他关键词}: IoT/Jetson/Matplotlib/GGplot2/Sklearn/Reproduciblity/GraphQL
   \item \textbf{英语}: 6级/可不用字幕听懂YT的技术类视频
 \end{itemize}
 
@@ -54,7 +57,7 @@
   \item 监督算法流程的开发过程，负责与算法流程对接。如隐私计算流程开发。
     \begin{itemize}
     \item 利用AWS云平台，将数字病理浏览分享功能云端化。使用S3、AppSync、RDS、CDK等。
-    \item 利用jsonnet和nextflow构建一键化的算法流程，提高流程的可重复性。
+    \item 利用Jsonnet和Nextflow（Groovy）构建一键化的算法流程，提高流程的可重复性。
     \end{itemize}
 \end{itemize}
 
@@ -64,9 +67,11 @@
   \item 负责软件开发相关会议的主持，组织撰写开发计划书，软件开发概要设计，详细设计等相关文档，对软件开发进行质量控制。
   \item 完成多项公司内部和外部软件开发任务：
     \begin{itemize}
-    \item 一款单机版数字病理软件，包括病理切片的上传、权限控制、数据病理传递流程等。
-    \item 独立设计和完成AIServer，将各种数字病理相关算法进行容器化部署，支持多任务多GPU同时调用，有资源调度功能。
+    \item 一款单机版数字病理软件（Flask、MySQL、Docker），包括病理切片的上传、权限控制、数据病理传递流程等。
+    \item 使用Go构建单文件web应用（Echo框架），实现上述软件“自动更新”功能。
+    \item 独立设计和完成AI运行服务（Python、Flask、Docker、MySQL），将各种数字病理相关算法进行容器化部署，支持多任务多GPU同时调用，有资源调度功能。
     \item 一款整合浏览和算法展示的软件，已交付给郑州医科大学。
+    \item 使用QuPATH这个开源工具的脚本功能（Groovy）整合Stardist流程。
     \end{itemize}
 \end{itemize}
 
@@ -115,11 +120,14 @@
 \section{个人优势}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
+  \item 科研背景，有文章发表经验，独立完成英文版初稿\cite{Zhao2015}。
   \item 编程语言能力突出，技术栈适应性广：8年Python经验，自学编程的第一门语言，对生物信息、爬虫、数据分析、深度学习、web开发等多种应用领域都有经验，对生态圈熟悉。对于调试、规范、测试、asyncIO等都有心得。R语言认真学过，了解R的LISP本质。Java/Groovy、Go、Node.js等语言都可以进行编程。
-  \item 乐于学习新的知识，勇于挑战自我：Jsonnet、Nextflow、Ansible、AWS等技术（最近一年）的掌握全部来源于自学。
+  \item DevOp能力强，Ansible熟练，Docker熟练，擅长流程部署与自动化。
+  \item 乐于学习新的知识，勇于尝试：Jsonnet、Nextflow、Ansible、AWS等技术（最近一年）的掌握全部来源于自学。
   \item 责任心强。
   \item 学习能力强，阅读英文文档是习惯。
-  \item 乐于分享：个人认为技术分享是提高团队凝聚力的一项重要方式。
+  \item 乐于分享：个人认为技术分享是提高团队凝聚力的一项重要方式，而在帮助他人的过程中同时有利于加深对技术的理解。
+  \item 合作精神：有效沟通+积极协作。
 
 %   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
 %   \item 第三届中国软件杯大学生软件设计大赛\textbf{全国一等奖}( \textit{http://www.cnsoftbei.com/} ),2014 年8月
@@ -130,6 +138,15 @@
 %   \item 个人博客：\textit{https://hijiangtao.github.io/}，更多作品见 \textit{https://github.com/hijiangtao}
 %   \item 电视节目"爸爸去哪儿"可视化分析展示, \textit{https://hijiangtao.github.io/variety-show-hot-spot-vis/}
 \end{itemize}
+
+\bibliographystyle{plain}
+\renewcommand\refname{发表文章}
+\bibliography{a}
+
+% \begin{itemize}
+%   \item Regulation of \textit{OsmiR156h} through Alternative Polyadenylation Improves Grain Yield in Rice. \\
+%   Published: May 8, 2015 \textbf{Plos One} url: \textit{https://doi.org/10.1371/journal.pone.0126154}
+% \end{itemize}
 
 % \section{\faHeartO\ 项目/作品摘要}
 % \section{项目/作品摘要}

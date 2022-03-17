@@ -35,3 +35,13 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# others
+*.pdf
+*.gz
+*.bbl
+*.blg
+*.*_latexmk
+*.fls
+*.aux
+*.out
