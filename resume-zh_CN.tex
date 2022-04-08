@@ -27,7 +27,7 @@
 
 % \section{\faGraduationCap\ 教育背景}
 \section{教育背景}
-\datedsubsection{\textbf{中国科学院大学/中科院合肥物质科学研究院},生物物理,\textit{博士}}{2006.9 - 2014.6}
+\datedsubsection{\textbf{中国科学院大学/技术生物与农业工程研究所},生物物理,\textit{博士}}{2006.9 - 2014.6}
 \datedsubsection{\textbf{中国农业大学},生命科学,\textit{理学学士}}{2002.9 - 2006.6}
 
 % \section{\faCogs\ IT 技能}
@@ -56,7 +56,7 @@
   \item 负责软件开发相关会议的主持，组织撰写开发计划书，软件开发概要设计，详细设计等相关文档，对软件开发进行质量控制。
   \item 监督算法流程的开发过程，负责与算法流程对接。如隐私计算流程开发。
     \begin{itemize}
-    \item 利用AWS云平台，将数字病理浏览分享功能云端化。使用S3、AppSync、RDS、CDK等。
+    \item 利用AWS云平台，将数字病理浏览分享功能云端化。使用S3、AppSync、RDS、CDK等。构建基于AWS平台的web应用。
     \item 利用Jsonnet和Nextflow（Groovy）构建一键化的算法流程，提高流程的可重复性。
     \end{itemize}
 \end{itemize}
@@ -67,20 +67,25 @@
   \item 负责软件开发相关会议的主持，组织撰写开发计划书，软件开发概要设计，详细设计等相关文档，对软件开发进行质量控制。
   \item 完成多项公司内部和外部软件开发任务：
     \begin{itemize}
-    \item 一款单机版数字病理软件（Flask、MySQL、Docker），包括病理切片的上传、权限控制、数据病理传递流程等。
-    \item 使用Go构建单文件web应用（Echo框架），实现上述软件“自动更新”功能。
-    \item 独立设计和完成AI运行服务（Python、Flask、Docker、MySQL），将各种数字病理相关算法进行容器化部署，支持多任务多GPU同时调用，有资源调度功能。
-    \item 一款整合浏览和算法展示的软件，已交付给郑州医科大学。
+    \item 一款整合浏览和算法展示的软件，已交付给郑州医科大学一附院。使用微服务的方式，5个组件协同作用，可用于同时部署在CPU服务器和GPU服务器。
     \item 使用QuPATH这个开源工具的脚本功能（Groovy）整合Stardist流程。
+    \item 使用TypeScript的oclif框架构建命令行应用，也整合了Express，作为QuPath算法调用的中间组件。
+    \item 使用Ansible自动化软件开发部署流程。
+    \item 使用Node.js + Express + PM2构建IoT项目的后端。
+    \item 学习AWS中的Amplify（AppSync为核心，强调GraphQL）快速开发框架，但中国区目前无法使用该框架，仅使用Amplify Mock用于开发简易项目。学习React技术栈，使用hooks构建SPA应用。
     \end{itemize}
 \end{itemize}
 
 \datedsubsection{\textbf{嘉兴慧领医疗科技有限公司/嘉兴清格医疗科技有限公司 | SingularityAI}, 高级软件工程师}{2018.10-2020.4}
 \begin{itemize}
   \item 公司人事变动，在2020.1进行过一次更名
-  \item 负责算法流程开发，如Active Learning
-  \item 负责算法流程工程化，使用docker
-  \item 负责对第三方合作商的so文件进行ctypes包装成python可用包
+  \item 参与开发一款单机版数字病理软件（Flask、MySQL、Docker），包括病理切片的上传、权限控制（JWT）、数据病理传递流程等。均使用Flask的best practice全家桶。对PyTest框架深度应用。
+  \item 使用Go构建单文件web应用（Echo框架），实现上述软件“自动更新”功能。使用Go的原因是在于其单文件易于部署的特性。
+  \item 独立设计和完成AI运行服务（Python、Flask、Docker、MySQL），将各种数字病理相关算法进行容器化部署，支持多任务多GPU同时调用，有资源调度功能。使用MySQL实现的Queue。
+  \item 负责算法流程开发，开发Active Learning流程——一种通过对待标注数据进行筛选而降低标注成本并可能加快现有模型优化过程的方法，对web应用有一定的要求。
+  \item 负责算法流程工程化，使用docker-compose对Python-based的算法流程（TensorFlow/PyTorch）进行包装，标准化输入输出，以对接上游的AI运行服务。
+  \item 负责对第三方合作商的so文件进行ctypes包装成python可用包。
+  \item 尝试用Vue2+Flask构建过一个Images Viewer简单项目，方便同事进行远程阅片。
 \end{itemize}
 
 \datedsubsection{\textbf{北京雅康博生物科技有限公司 | ACCB}, 生物信息工程师}{2017.9-2018.10}
@@ -91,14 +96,14 @@
 
 \datedsubsection{\textbf{北京创新乐土生物科技有限公司 | Cheerland}, 生物信息工程师}{2016.9-2017.9}
 \begin{itemize}
-  \item \textbf{独立负责Microbiome流程开发}独立学习并应用了QIIME流程，包括自动化报告产生。
+  \item \textbf{独立负责Microbiome流程开发}独立学习并应用了QIIME流程（Python语言包），包括自动化报告产生（Jinja2+HTML）。
 \end{itemize}
 
 \datedsubsection{\textbf{北京诺禾致源生物科技有限公司 | Novogene}, 生物信息工程师}{2014.6-2016.9}
 \begin{itemize}
   \item \textbf{独立负责eQTL流程开发}使用matrixEQTL构建流程。
-  \item RNA项目经验。
-  \item 重测序项目经验。
+  \item RNA项目经验：从二代测序数据获得不同样品间差异表达的RNA列表，并对其进行生物学注释。
+  \item 重测序项目经验：找到DNA样品上突变的位点，并于表型建立相关性。
   \item 熟悉Python和R在生物信息上相关应用，使用过perl。
 \end{itemize}
 
