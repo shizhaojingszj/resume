@@ -1,5 +1,7 @@
 # This is copied from git@github.com:hijiangtao/resume.git.
 
+# PDF版简历：[请点击](https://github.com/shizhaojingszj/resume/blob/zhaomeng/resume-zh_CN-20220618.pdf)
+
 # 个人简历
 
 本项目为个人简历 Latex 源码存放，同时包含效果图呈现，简历入口为 resume-zh_CN.tex， 修改自项目 [resume](https://github.com/billryan/resume/)，若不想本地手动编译可以将该源码打包至 zip 直接上传至 ShareLatex 进行在线编译与预览。
